@@ -49,3 +49,18 @@ let myDouble = 3.141
 let doubleStr = String(format: "%.2f", ceil(myDouble*100)/100) // "3.15"
 
 ```
+
+
+## Method - 3
+
+source :- https://stackoverflow.com/a/56660989/10422074
+
+```swift
+let val: Float = 1.27500
+
+//Force round up after two decimal places
+let roundedUp = ceil(val * 100)/100    //1.28
+
+//Force round down after two decimal places
+let roundedUp = floor(val * 100)/100   //1.27
+```
